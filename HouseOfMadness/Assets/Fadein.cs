@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Fadein : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class Fadein : MonoBehaviour
     {
         BlackOut(3f);
         BlackIn(3f);
+    }
+
+    public void HideSelectEnter(SelectEnterEventArgs args)
+    {
+        Fadeinout();
     }
        
 
