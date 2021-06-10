@@ -1249,7 +1249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1682,7 +1682,7 @@ PrefabInstance:
     - target: {fileID: 7917397417315194324, guid: 8acab6a53bd331347b8b62a2c18b5216, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1590894260}
     - target: {fileID: 7917397417315194324, guid: 8acab6a53bd331347b8b62a2c18b5216, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1722,7 +1722,7 @@ PrefabInstance:
     - target: {fileID: 7917397417586873658, guid: 8acab6a53bd331347b8b62a2c18b5216, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1590894260}
     - target: {fileID: 7917397417586873658, guid: 8acab6a53bd331347b8b62a2c18b5216, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1762,7 +1762,7 @@ PrefabInstance:
     - target: {fileID: 7917397417972213724, guid: 8acab6a53bd331347b8b62a2c18b5216, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1590894260}
     - target: {fileID: 7917397417972213724, guid: 8acab6a53bd331347b8b62a2c18b5216, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1802,7 +1802,7 @@ PrefabInstance:
     - target: {fileID: 7917397418002356489, guid: 8acab6a53bd331347b8b62a2c18b5216, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1590894260}
     - target: {fileID: 7917397418002356489, guid: 8acab6a53bd331347b8b62a2c18b5216, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1902,7 +1902,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7027586375821960788, guid: 4d3bf4dd5a247014b8567f66d89c5f93, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7027586375821960788, guid: 4d3bf4dd5a247014b8567f66d89c5f93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2341,7 +2341,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &696416298
 PrefabInstance:
@@ -2820,7 +2820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3161,7 +3161,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 2989653119098591073, guid: d15120f75614d7e48a90cf0860d136cd, type: 3}
+  m_ModelPrefab: {fileID: 91019049502135852, guid: 00e65d0b39728494caee9adc6f3b9540, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -4010,7 +4010,7 @@ Transform:
   m_Children:
   - {fileID: 604848423}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &1090313122
 CharacterController:
@@ -4653,7 +4653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4871,7 +4871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5605,7 +5605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6389009857671057604, guid: 9dee8c13243086949a42246934c71a18, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 6389009857671057604, guid: 9dee8c13243086949a42246934c71a18, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5683,8 +5683,124 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadeInOutController
       objectReference: {fileID: 0}
+    - target: {fileID: 6389009857671057610, guid: 9dee8c13243086949a42246934c71a18, type: 3}
+      propertyPath: HideClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e4ad47820f368f644a21104d1f43df44, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dee8c13243086949a42246934c71a18, type: 3}
+--- !u!114 &1590894260 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6389009857671057610, guid: 9dee8c13243086949a42246934c71a18, type: 3}
+  m_PrefabInstance: {fileID: 1590894259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590894261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35ccb2c6d2887647b119bacebb2154a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1590894261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6389009857671057608, guid: 9dee8c13243086949a42246934c71a18, type: 3}
+  m_PrefabInstance: {fileID: 1590894259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1590894262
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590894261}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1631064735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5714,7 +5830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6134,6 +6250,7 @@ GameObject:
   - component: {fileID: 1868702335}
   - component: {fileID: 1868702334}
   - component: {fileID: 1868702333}
+  - component: {fileID: 1868702338}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6284,6 +6401,102 @@ Transform:
   m_Father: {fileID: 604848423}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1868702338
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868702332}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c05c7cd479388c24281e5d81b2c7a98c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1872405338
 GameObject:
   m_ObjectHideFlags: 0
@@ -6420,7 +6633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4000014292305892, guid: 7af6b07676c52b94ba63b3fa7ff7d0fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7224,6 +7437,34 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0.42865637
       objectReference: {fileID: 0}
+    - target: {fileID: 678981235396262864, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981235396262864, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981235396262864, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 678981235396262864, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981235396262864, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981235396262864, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981235396262864, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 678981235396262871, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 28.013277
@@ -7248,6 +7489,62 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0.52637166
       objectReference: {fileID: 0}
+    - target: {fileID: 678981236353005325, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236353005325, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236353005325, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 678981236353005325, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236353005325, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236353005325, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236353005325, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236446579160, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236446579160, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236446579160, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 678981236446579160, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236446579160, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236446579160, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236446579160, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 678981236446579167, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 29.10003
@@ -7271,6 +7568,34 @@ PrefabInstance:
     - target: {fileID: 678981236731263805, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 0.5263716
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236731263806, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236731263806, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236731263806, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 678981236731263806, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236731263806, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236731263806, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 678981236731263806, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 819806319447133822, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -7848,6 +8173,34 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -8.66769
       objectReference: {fileID: 0}
+    - target: {fileID: 1758351015066724616, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015066724616, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015066724616, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 1758351015066724616, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015066724616, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015066724616, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015066724616, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1758351015066724623, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 24.546661
@@ -7872,6 +8225,62 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -25.003159
       objectReference: {fileID: 0}
+    - target: {fileID: 1758351015720330709, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015720330709, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015720330709, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 1758351015720330709, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015720330709, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015720330709, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015720330709, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015746280192, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015746280192, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015746280192, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 1758351015746280192, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015746280192, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015746280192, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351015746280192, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1758351015746280199, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 23.460098
@@ -7895,6 +8304,34 @@ PrefabInstance:
     - target: {fileID: 1758351016401136101, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -25.023542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351016401136102, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351016401136102, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351016401136102, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 1758351016401136102, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351016401136102, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351016401136102, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758351016401136102, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2077826295329958860, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -9136,6 +9573,34 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0.5263716
       objectReference: {fileID: 0}
+    - target: {fileID: 6207119110014813277, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110014813277, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110014813277, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 6207119110014813277, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110014813277, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110014813277, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110014813277, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6207119110594508370, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 31.374031
@@ -9147,6 +9612,62 @@ PrefabInstance:
     - target: {fileID: 6207119110594508370, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 0.52637166
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110594508373, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110594508373, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110594508373, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 6207119110594508373, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110594508373, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110594508373, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110594508373, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110702237824, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110702237824, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110702237824, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 6207119110702237824, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110702237824, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110702237824, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119110702237824, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6207119110702237825, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -9171,6 +9692,34 @@ PrefabInstance:
     - target: {fileID: 6207119111350011056, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 0.5263716
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119111350011059, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119111350011059, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119111350011059, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1590894260}
+    - target: {fileID: 6207119111350011059, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119111350011059, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideSelectEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119111350011059, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207119111350011059, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6418112176164645013, guid: df6034142d20b4648a0b1c0d10e7b2ab, type: 3}
       propertyPath: m_ConnectedAnchor.x

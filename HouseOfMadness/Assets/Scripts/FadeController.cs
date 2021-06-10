@@ -13,7 +13,9 @@ public class FadeController : MonoBehaviour
     private ContinuousMoveProviderBase moveProvider;
     private CanvasGroup canvasGroup;
     private float _fadeTime;
-    
+    private AudioSource _audioSource;
+    public AudioClip HideClip;
+
     private void Init()
     {
         _fadeTime = 3f;
@@ -22,6 +24,7 @@ public class FadeController : MonoBehaviour
         image = transform.Find("Panel").GetComponent<Image>();
         image.color = new Color(0, 0, 0, 1);
         canvasGroup.alpha = 0f;
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -47,6 +50,8 @@ public class FadeController : MonoBehaviour
     {
         if (!isHidden)
         {
+            _audioSource.Stop();
+            _audioSource.PlayOneShot(HideClip);
             StartCoroutine(FadeIn());
         }
     }
