@@ -35,7 +35,7 @@ public class ZombieController : MonoBehaviour
         {
             case 0:
                 _speed = 1.0f;
-                _health = 4;
+                _health = 3;
                 _detectionDist = 7; // scaled x1.3, real detection range (9.1)
                 break;
             case 1:
@@ -45,7 +45,7 @@ public class ZombieController : MonoBehaviour
                 break;
             case 2:
                 _speed = 0.8f;
-                _health = 6;
+                _health = 4;
                 _detectionDist = 13; // scaled x0.9, real detection range (11.7)
                 break;
         }
