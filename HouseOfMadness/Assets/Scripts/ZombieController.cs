@@ -33,17 +33,17 @@ public class ZombieController : MonoBehaviour
             case 0:
                 _speed = 1.0f;
                 _health = 4;
-                GetComponent<SphereCollider>().radius = _detectionDist = 7; // scaled x1.3, real detection range (9.1)
+                _detectionDist = 7; // scaled x1.3, real detection range (9.1)
                 break;
             case 1:
                 _speed = 2.0f;
                 _health = 2;
-                GetComponent<SphereCollider>().radius = _detectionDist = 6; // scaled x1.1, real detection range (6.6)
+                _detectionDist = 6; // scaled x1.1, real detection range (6.6)
                 break;
             case 2:
                 _speed = 0.8f;
                 _health = 5;
-                GetComponent<SphereCollider>().radius = _detectionDist = 13; // scaled x0.9, real detection range (11.7)
+                _detectionDist = 13; // scaled x0.9, real detection range (11.7)
                 break;
         }
     }
@@ -137,7 +137,7 @@ public class ZombieController : MonoBehaviour
         }
     }
 
-    void RegenHealth()
+    private void RegenHealth()
     {
         if (uid == 2)
         {
@@ -152,10 +152,25 @@ public class ZombieController : MonoBehaviour
             }
         }
     }
+    
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && !_hasTarget)
+        {
+            if (Mathf.Abs(other.transform.position.y - transform.position.y) < 1.5f)
+            {
+                _hasTarget = true;
+                _audioSource.Stop();
+                _audioSource.PlayOneShot(audioList[0]);   
+            }
+        }
+    }
+    
+    
 
     public void Attacked()
     {
-        if (_health > 0)
+        if (_health > 1)
         {
             _health--;
             _audioSource.Stop();
@@ -180,19 +195,6 @@ public class ZombieController : MonoBehaviour
             _audioSource.Stop();
             _audioSource.PlayOneShot(audioList[1]);
             _player.GetComponent<PlayerController>().Attacked();
-        }
-    }
-    
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player") && !_hasTarget)
-        {
-            if (Mathf.Abs(other.transform.position.y - transform.position.y) < 1.5f)
-            {
-                _hasTarget = true;
-                _audioSource.Stop();
-                _audioSource.PlayOneShot(audioList[0]);   
-            }
         }
     }
 }

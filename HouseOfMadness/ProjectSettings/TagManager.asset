@@ -7,7 +7,7 @@ TagManager:
   - Key
   - Bullet
   - Zombie
-  - Exit
+  - Detector
   layers:
   - Default
   - TransparentFX
