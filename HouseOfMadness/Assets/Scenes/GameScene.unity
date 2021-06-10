@@ -2004,9 +2004,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6096380750807857891, guid: 2961612f8eb581f49b5913d1001a8513, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6668569049813566279, guid: 2961612f8eb581f49b5913d1001a8513, type: 3}
       propertyPath: m_Name
       value: LightObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6668569049813566279, guid: 2961612f8eb581f49b5913d1001a8513, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6668569049813566279, guid: 2961612f8eb581f49b5913d1001a8513, type: 3}
       propertyPath: m_IsActive
@@ -2398,6 +2406,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1435482679594971633, guid: 4d3bf4dd5a247014b8567f66d89c5f93, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3745850929583305302, guid: 4d3bf4dd5a247014b8567f66d89c5f93, type: 3}
       propertyPath: m_RootOrder
       value: 1
