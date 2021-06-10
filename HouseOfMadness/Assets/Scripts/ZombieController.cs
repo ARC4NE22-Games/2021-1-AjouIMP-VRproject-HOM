@@ -22,8 +22,8 @@ public class ZombieController : MonoBehaviour
     
     private void Start()
     {
-        //_player = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody").gameObject;
-        _player = GameObject.Find("Capsule");
+        _player = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody").gameObject;
+        //_player = GameObject.Find("Capsule");
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
