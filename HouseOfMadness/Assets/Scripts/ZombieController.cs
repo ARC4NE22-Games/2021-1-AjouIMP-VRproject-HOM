@@ -42,7 +42,7 @@ public class ZombieController : MonoBehaviour
                 break;
             case 2:
                 _speed = 0.8f;
-                _health = 5;
+                _health = 6;
                 _detectionDist = 13; // scaled x0.9, real detection range (11.7)
                 break;
         }
@@ -59,7 +59,6 @@ public class ZombieController : MonoBehaviour
         FindPlayer();
         SetAnimation();
         SetSpeed();
-        RegenHealth();
     }
 
     void FindPlayer()
@@ -136,22 +135,7 @@ public class ZombieController : MonoBehaviour
             _navMeshAgent.speed = _speed;
         }
     }
-
-    private void RegenHealth()
-    {
-        if (uid == 2)
-        {
-            if (_regenCoolDown < 60f && _health < 5)
-            {
-                _regenCoolDown++;
-            }
-            else
-            {
-                _regenCoolDown = 0;
-                _health++;
-            }
-        }
-    }
+    
     
     private void OnTriggerStay(Collider other)
     {
