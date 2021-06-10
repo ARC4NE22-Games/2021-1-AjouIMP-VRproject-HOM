@@ -71,20 +71,19 @@ public class ZombieController : MonoBehaviour
             _navMeshAgent.SetDestination(_player.transform.position);
 
             float limit = Mathf.Pow((_detectionDist * transform.localScale.x) + 1, 2);
-            if (_distance > limit || Mathf.Abs(transform.position.y - _player.transform.position.y) > 1.5f)
-            {
-                _hasTarget = false;
-            }
-            
-            if (_fade.isHidden)
+            if (_distance > limit || Mathf.Abs(transform.position.y - _player.transform.position.y) > 1.5f || _fade.isHidden)
             {
                 _hasTarget = false;
             }
         }
         else
         {
-            _navMeshAgent.SetDestination(_basePos);
             _distance = dist2(transform.position, _basePos);
+            _navMeshAgent.SetDestination(_basePos);
+
+            if (_distance < 1f)
+                _navMeshAgent.isStopped = true;
+            
         }
     }
 
@@ -110,8 +109,8 @@ public class ZombieController : MonoBehaviour
         {
             if (_distance < 1f)
             {
-                _navMeshAgent.isStopped = true;
                 _animator.SetBool("isMove", false);
+                _animator.SetBool("isAttack", false);
             }
             else
             {

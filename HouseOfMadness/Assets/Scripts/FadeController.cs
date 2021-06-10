@@ -40,8 +40,8 @@ public class FadeController : MonoBehaviour
 
     IEnumerator FadeIn()
     {
-        canvasGroup.alpha = 0f;
         isHidden = true;
+        canvasGroup.alpha = 0f;
         moveProvider.moveSpeed = 0f;   
         
         while ( canvasGroup.alpha < 1.0f)
