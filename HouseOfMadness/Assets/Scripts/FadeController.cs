@@ -28,7 +28,21 @@ public class FadeController : MonoBehaviour
     {
         Init();
     }
-    
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("click0");
+            isHidden = false;
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            Debug.Log("click1");
+            isHidden = true;
+        }
+    }
+
     public void HideSelectEnter(SelectEnterEventArgs args)
     {
         if (!isHidden)

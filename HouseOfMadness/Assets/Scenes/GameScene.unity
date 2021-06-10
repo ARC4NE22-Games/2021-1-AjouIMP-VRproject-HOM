@@ -5525,6 +5525,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1868702336}
+    - target: {fileID: 6389009857671057605, guid: 9dee8c13243086949a42246934c71a18, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6389009857671057608, guid: 9dee8c13243086949a42246934c71a18, type: 3}
       propertyPath: m_Name
       value: FadeInOut
