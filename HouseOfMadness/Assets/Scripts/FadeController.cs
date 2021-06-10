@@ -6,15 +6,20 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class FadeController : MonoBehaviour
 {
-    public GameObject XRRig;
-    public CanvasGroup canvasGroup;
     public bool isHidden;
     
+    private Image image;
+    private ContinuousMoveProviderBase moveProvider;
+    private CanvasGroup canvasGroup;
     private float _fadeTime;
     
     private void Init()
     {
         _fadeTime = 4f;
+        moveProvider = GameObject.Find("XR Rig").GetComponent<ContinuousMoveProviderBase>();
+        canvasGroup = GetComponent<CanvasGroup>();
+        image = transform.Find("Panel").GetComponent<Image>();
+        image.color = new Color(0, 0, 0, 0);
     }
 
     void Start()
@@ -26,7 +31,7 @@ public class FadeController : MonoBehaviour
     {
         StartCoroutine(FadeIn());
         isHidden = true;
-        XRRig.SetActive(false);
+        moveProvider.moveSpeed = 0f;
     }
 
 
@@ -50,6 +55,6 @@ public class FadeController : MonoBehaviour
         }
         
         isHidden = false;
-        XRRig.SetActive(true);
+        moveProvider.moveSpeed = 2f;
     }
 }
