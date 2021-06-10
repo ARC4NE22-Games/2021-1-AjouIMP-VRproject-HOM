@@ -71,12 +71,14 @@ public class ZombieController : MonoBehaviour
 
             float limit = Mathf.Pow((_detectionDist * transform.localScale.x) + 1, 2);
             if (_distance > limit || Mathf.Abs(transform.position.y - _player.transform.position.y) > 1.5f)
+            {
                 _hasTarget = false;
+            }
         }
         else
         {
             _navMeshAgent.SetDestination(_basePos);
-            _distance = dist2(transform.position,_basePos);
+            _distance = dist2(transform.position, _basePos);
         }
     }
 
@@ -100,8 +102,17 @@ public class ZombieController : MonoBehaviour
         }
         else
         {
-            if(_distance < 1f)
+            if (_distance < 1f)
+            {
+                _navMeshAgent.isStopped = true;
                 _animator.SetBool("isMove", false);
+            }
+            else
+            {
+                _navMeshAgent.isStopped = false;
+                _animator.SetBool("isMove", true);
+                _animator.SetBool("isAttack", false);
+            }
         }
     }
 
@@ -171,8 +182,8 @@ public class ZombieController : MonoBehaviour
             _player.GetComponent<PlayerController>().Attacked();
         }
     }
-
-    private void OnTriggerEnter(Collider other)
+    
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && !_hasTarget)
         {
