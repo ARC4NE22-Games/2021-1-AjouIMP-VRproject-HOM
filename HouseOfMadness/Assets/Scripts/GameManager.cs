@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,8 +26,8 @@ public class GameManager : MonoBehaviour
     {
         if(KeyCount == 3)
         {
-            GameObject spawnedBullet = Instantiate(LightObject, new Vector3(0,2.5f,0), Quaternion.identity);
-            KeyCount = 0;
+            LightObject.SetActive(true);
+            //KeyCount = 0;
         }
     }
 
@@ -47,6 +48,11 @@ public class GameManager : MonoBehaviour
             _audioSource.PlayOneShot(KeyClip);
             BulletCount += 1;
             Debug.Log("User's bullet count : " + BulletCount);
+        }
+
+        else if (args.interactable.CompareTag("Exit"))
+        {
+            SceneManager.LoadScene("MenuScene");
         }
     }
 }
