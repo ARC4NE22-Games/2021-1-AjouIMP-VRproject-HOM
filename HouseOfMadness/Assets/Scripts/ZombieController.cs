@@ -21,10 +21,11 @@ public class ZombieController : MonoBehaviour
     private int _health;
     private bool _hasTarget;
     
-    private void Start()
+    private void Awake()
     {
         _player = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody").gameObject;
-        _fade = GameObject.Find("FadeInOut").GetComponent<FadeController>();
+        _fade = GameObject.Find("FadeInOutController").GetComponent<FadeController>();
+        
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
@@ -65,6 +66,7 @@ public class ZombieController : MonoBehaviour
 
     void FindPlayer()
     {
+        Debug.Log(_hasTarget);
         if (_hasTarget)
         {
             _distance = dist2(transform.position, _player.transform.position);
@@ -145,7 +147,7 @@ public class ZombieController : MonoBehaviour
     
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && !_hasTarget)
+        if (other.CompareTag("Player") && !_hasTarget && !_fade.isHidden)
         {
             if (Mathf.Abs(other.transform.position.y - transform.position.y) < 1.5f)
             {
@@ -184,7 +186,7 @@ public class ZombieController : MonoBehaviour
             // Damage handling if distance from player is close
             _audioSource.Stop();
             _audioSource.PlayOneShot(audioList[1]);
-            _player.GetComponent<GameManager>().Attacked();
+            //_player.GetComponent<GameManager>().Attacked();
         }
     }
 }
