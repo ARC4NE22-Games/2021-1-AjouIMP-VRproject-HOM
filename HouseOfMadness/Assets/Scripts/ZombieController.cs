@@ -178,7 +178,7 @@ public class ZombieController : MonoBehaviour
             // Damage handling if distance from player is close
             _audioSource.Stop();
             _audioSource.PlayOneShot(audioList[1]);
-            _player.GetComponent<PlayerController>().Attacked();
+            _player.GetComponent<GameManager>().Attacked();
         }
     }
 }

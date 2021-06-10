@@ -7,18 +7,21 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private AudioSource _audioSource;
-    public AudioClip KeyClip;
+    public AudioClip KeyClip, AttackedClip;
 
-    public int KeyCount = 0;
-    public int BulletCount = 0;
+    public int KeyCount, BulletCount, Health;
     public GameObject LightObject;
+    
+    private const int MAX_BULLET_COUNT = 10;
+    private AudioSource _audioSource;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
+        Health = 5;
     }
 
     // Update is called once per frame
@@ -45,13 +48,31 @@ public class GameManager : MonoBehaviour
         else if (args.interactable.CompareTag("Bullet"))
         {
             Destroy(args.interactable.gameObject);
-            _audioSource.PlayOneShot(KeyClip);
-            BulletCount += 1;
-            Debug.Log("User's bullet count : " + BulletCount);
+            if (BulletCount < MAX_BULLET_COUNT)
+            {
+                _audioSource.PlayOneShot(KeyClip);
+                BulletCount++;
+                Debug.Log("User's bullet count : " + BulletCount);
+            }
         }
 
         else if (args.interactable.CompareTag("Exit"))
         {
+            SceneManager.LoadScene("MenuScene");
+        }
+    }
+    
+    public void Attacked()
+    {
+        if (Health > 0)
+        {
+            _audioSource.Stop();
+            _audioSource.PlayOneShot(AttackedClip);
+            Health--;
+        }
+        else
+        {
+            // Game Over
             SceneManager.LoadScene("MenuScene");
         }
     }
