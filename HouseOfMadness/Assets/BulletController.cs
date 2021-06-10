@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
+    private float ttl;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +15,11 @@ public class BulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ttl += Time.deltaTime;
+        if (ttl > 60.0f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,12 +27,7 @@ public class BulletController : MonoBehaviour
         if (other.CompareTag("Zombie"))
         {
             other.gameObject.GetComponent<ZombieController>().Attacked();
-            Debug.Log("Zombie Trigger");
-            Debug.Log(Vector3.Distance(other.transform.position, transform.position));
+            Destroy(gameObject);
         }
-
-
-
     }
-
 }
