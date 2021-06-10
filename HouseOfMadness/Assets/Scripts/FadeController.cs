@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,18 +16,19 @@ public class FadeController : MonoBehaviour
     
     private void Init()
     {
-        _fadeTime = 4f;
+        _fadeTime = 3f;
         moveProvider = GameObject.Find("XR Rig").GetComponent<ContinuousMoveProviderBase>();
         canvasGroup = GetComponent<CanvasGroup>();
         image = transform.Find("Panel").GetComponent<Image>();
-        image.color = new Color(0, 0, 0, 0);
+        image.color = new Color(0, 0, 0, 1);
+        canvasGroup.alpha = 0f;
     }
 
     void Start()
     {
         Init();
     }
-
+    
     public void HideSelectEnter(SelectEnterEventArgs args)
     {
         StartCoroutine(FadeIn());

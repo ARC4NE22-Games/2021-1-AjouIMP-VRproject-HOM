@@ -24,13 +24,12 @@ public class ZombieController : MonoBehaviour
     private void Start()
     {
         _player = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody").gameObject;
-        //_player = GameObject.Find("Capsule");
-        _fade = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("FadeInOut")
-            .GetComponent<FadeController>();
+        _fade = GameObject.Find("FadeInOut").GetComponent<FadeController>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
         _basePos = transform.position;
+        
         switch (uid)
         {
             case 0:
@@ -76,16 +75,16 @@ public class ZombieController : MonoBehaviour
             {
                 _hasTarget = false;
             }
+            
+            if (_fade.isHidden)
+            {
+                _hasTarget = false;
+            }
         }
         else
         {
             _navMeshAgent.SetDestination(_basePos);
             _distance = dist2(transform.position, _basePos);
-        }
-
-        if (_fade.isHidden)
-        {
-            _hasTarget = false;
         }
     }
 
