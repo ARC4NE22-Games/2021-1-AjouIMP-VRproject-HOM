@@ -3161,7 +3161,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 91019049502135852, guid: 00e65d0b39728494caee9adc6f3b9540, type: 3}
+  m_ModelPrefab: {fileID: 6160223244362830448, guid: 00e65d0b39728494caee9adc6f3b9540, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -5605,7 +5605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6389009857671057604, guid: 9dee8c13243086949a42246934c71a18, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 6389009857671057604, guid: 9dee8c13243086949a42246934c71a18, type: 3}
       propertyPath: m_AnchorMax.x
