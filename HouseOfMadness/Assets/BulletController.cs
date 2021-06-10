@@ -20,8 +20,9 @@ public class BulletController : MonoBehaviour
     {
         if (other.CompareTag("Zombie"))
         {
-            other.GetComponent<ZombieController>().Attacked();
+            other.gameObject.GetComponent<ZombieController>().Attacked();
             Debug.Log("Zombie Trigger");
+            Debug.Log(Vector3.Distance(other.transform.position, transform.position));
         }
 
 
