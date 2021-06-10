@@ -13,16 +13,17 @@ public class ZombieController : MonoBehaviour
     private Animator _animator;
     private Vector3 _basePos;
     private float _distance, _coolDown, _speed;
-    private int _health;
+    private int _health, _detectionDist;
     private bool _hasTarget;
-
-    void Awake()
+    
+    private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _basePos = transform.position;
         _speed = (uid == 0) ? 1.0f : 1.5f;
         _health = (uid == 0) ? 4 : 2;
+        GetComponent<SphereCollider>().radius = _detectionDist = (uid == 0) ? 9 : 5;
     }
 
     float dist2(Vector3 pos1, Vector3 pos2)
@@ -47,7 +48,7 @@ public class ZombieController : MonoBehaviour
             _distance = dist2(transform.position, player.transform.position);
             _navMeshAgent.SetDestination(player.transform.position);
             
-            if (_distance > 100.0f)
+            if (_distance > (_detectionDist + 1) * (_detectionDist + 1))
                 _hasTarget = false;
         }
         else
