@@ -936,7 +936,6 @@ Transform:
   - {fileID: 852481716}
   - {fileID: 703527247}
   - {fileID: 1106953993}
-  - {fileID: 2797859318815665692}
   m_Father: {fileID: 1090313121}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2978,20 +2977,37 @@ Transform:
   m_Father: {fileID: 1512366530}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18}
+--- !u!1 &2797859318815665680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8673173474434445111, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
+  m_PrefabInstance: {fileID: 6813580548175773991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &2797859318815665681
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797859318815665680}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &2797859318815665682 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8673173474434445109, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
   m_PrefabInstance: {fileID: 6813580548175773991}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2797859318815665680}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f35ccb2c6d2887647b119bacebb2154a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &2797859318815665692 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8673173474434445115, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
+--- !u!223 &2797859318815665693 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8673173474434445114, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
   m_PrefabInstance: {fileID: 6813580548175773991}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5688264511248328772
@@ -5441,12 +5457,24 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 604848423}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8673173474434445109, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
+      propertyPath: XRRig
+      value: 
+      objectReference: {fileID: 1090313118}
+    - target: {fileID: 8673173474434445109, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2797859318815665693}
     - target: {fileID: 8673173474434445111, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
       propertyPath: m_Name
       value: FadeInOut
       objectReference: {fileID: 0}
+    - target: {fileID: 8673173474434445114, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1868702336}
     - target: {fileID: 8673173474434445115, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5457,7 +5485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8673173474434445115, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8673173474434445115, guid: 2de8a679c285d9642914a77c478abbef, type: 3}
       propertyPath: m_AnchorMax.x

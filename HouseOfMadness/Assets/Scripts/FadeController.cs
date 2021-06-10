@@ -6,18 +6,15 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class FadeController : MonoBehaviour
 {
-    public Image image;
+    public GameObject XRRig;
+    public CanvasGroup canvasGroup;
     public bool isHidden;
-
-    private GameObject _leftController, _rightController;
+    
     private float _fadeTime;
     
     private void Init()
     {
-        _leftController = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("LeftHand Controller").gameObject;
-        _rightController = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("RightHand Controller").gameObject;
-        _fadeTime = 2.5f;
-        image.color = new Color(0, 0, 0, 0);
+        _fadeTime = 4f;
     }
 
     void Start()
@@ -28,18 +25,16 @@ public class FadeController : MonoBehaviour
     public void HideSelectEnter(SelectEnterEventArgs args)
     {
         StartCoroutine(FadeIn());
-        _leftController.SetActive(false);
-        _rightController.SetActive(false);
         isHidden = true;
+        XRRig.SetActive(false);
     }
 
 
     IEnumerator FadeIn()
     {
-        while (image.color.a < 1.0f)
+        while ( canvasGroup.alpha < 1.0f)
         {
-            float alpha = image.color.a + 0.01f;
-            image.color = new Color(image.color.r, image.color.g, image.color.b, alpha);
+            canvasGroup.alpha += 0.01f;
             yield return new WaitForSeconds(_fadeTime * 0.01f);
         }
 
@@ -48,15 +43,13 @@ public class FadeController : MonoBehaviour
 
     IEnumerator FadeOut() 
     {
-        while (image.color.a > 0)
+        while (canvasGroup.alpha > 0)
         {
-            float alpha = image.color.a - 0.01f;
-            image.color = new Color(image.color.r, image.color.g, image.color.b, alpha);
+            canvasGroup.alpha -= 0.01f;
             yield return new WaitForSeconds(_fadeTime * 0.01f);
         }
-
-        _leftController.SetActive(true);
-        _rightController.SetActive(true);
+        
         isHidden = false;
+        XRRig.SetActive(true);
     }
 }
