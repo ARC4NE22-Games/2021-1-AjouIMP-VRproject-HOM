@@ -6,34 +6,51 @@ using UnityEngine.AI;
 
 public class ZombieController : MonoBehaviour
 {
+    public List<AudioClip> audioList;   // 0: SFX_Roar, 1: SFX_ZombieAttack, 2: SFX_ZombieAttacked
     public int uid;
     
     private GameObject _player;
     private NavMeshAgent _navMeshAgent;
     private Animator _animator;
+    private AudioSource _audioSource;
     private Vector3 _basePos;
-    
-    private float _distance, _coolDown, _speed;
-    private int _health, _detectionDist;
+
+    private float _distance, _detectionDist;
+    private float _slowCoolDown, _regenCoolDown, _speed;
+    private int _health;
     private bool _hasTarget;
     
     private void Start()
     {
-        _player = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody").gameObject;
-        Debug.Log(_player);
+        //_player = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody").gameObject;
+        _player = GameObject.Find("Capsule");
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
         _basePos = transform.position;
-        _speed = (uid == 0) ? 1.0f : 1.5f;
-        _health = (uid == 0) ? 4 : 2;
-        GetComponent<SphereCollider>().radius = _detectionDist = (uid == 0) ? 9 : 5;
+        switch (uid)
+        {
+            case 0:
+                _speed = 1.0f;
+                _health = 4;
+                GetComponent<SphereCollider>().radius = _detectionDist = 7; // scaled x1.3, real detection range (9.1)
+                break;
+            case 1:
+                _speed = 2.0f;
+                _health = 2;
+                GetComponent<SphereCollider>().radius = _detectionDist = 6; // scaled x1.1, real detection range (6.6)
+                break;
+            case 2:
+                _speed = 0.8f;
+                _health = 5;
+                GetComponent<SphereCollider>().radius = _detectionDist = 13; // scaled x0.9, real detection range (11.7)
+                break;
+        }
     }
 
     float dist2(Vector3 pos1, Vector3 pos2)
     {
-        float result = Mathf.Pow(pos1.x - pos2.x, 2)
-                       + Mathf.Pow(pos1.y - pos2.y, 2) + Mathf.Pow(pos1.z - pos2.z, 2);
-        return result;
+        return Mathf.Pow(pos1.x - pos2.x, 2) + Mathf.Pow(pos1.z - pos2.z, 2);
     }
 
     // Update is called once per frame
@@ -42,6 +59,7 @@ public class ZombieController : MonoBehaviour
         FindPlayer();
         SetAnimation();
         SetSpeed();
+        RegenHealth();
     }
 
     void FindPlayer()
@@ -50,8 +68,9 @@ public class ZombieController : MonoBehaviour
         {
             _distance = dist2(transform.position, _player.transform.position);
             _navMeshAgent.SetDestination(_player.transform.position);
-            
-            if (_distance > (_detectionDist + 1) * (_detectionDist + 1))
+
+            float limit = Mathf.Pow((_detectionDist * transform.localScale.x) + 1, 2);
+            if (_distance > limit || Mathf.Abs(transform.position.y - _player.transform.position.y) > 1.5f)
                 _hasTarget = false;
         }
         else
@@ -67,6 +86,7 @@ public class ZombieController : MonoBehaviour
         {
             if (_distance < 6.0f)
             {
+                // start attack
                 _navMeshAgent.isStopped = true;
                 _animator.SetBool("isMove", false);
                 _animator.SetBool("isAttack", true);
@@ -80,7 +100,7 @@ public class ZombieController : MonoBehaviour
         }
         else
         {
-            if(_distance < 1.0f)
+            if(_distance < 1f)
                 _animator.SetBool("isMove", false);
         }
     }
@@ -94,9 +114,9 @@ public class ZombieController : MonoBehaviour
             else
                 _navMeshAgent.speed = _speed;
             
-            if (_coolDown > 0)
+            if (_slowCoolDown > 0)
             {
-                _coolDown -= Time.deltaTime;
+                _slowCoolDown -= Time.deltaTime;
                 _navMeshAgent.speed = _speed * 0.5f;
             }
         }
@@ -106,16 +126,32 @@ public class ZombieController : MonoBehaviour
         }
     }
 
+    void RegenHealth()
+    {
+        if (uid == 2)
+        {
+            if (_regenCoolDown < 60f && _health < 5)
+            {
+                _regenCoolDown++;
+            }
+            else
+            {
+                _regenCoolDown = 0;
+                _health++;
+            }
+        }
+    }
+
     public void Attacked()
     {
         if (_health > 0)
         {
-            // 1 sec slow
             _health--;
-            if (_coolDown <= 0)
-            {
-                _coolDown = 30f;
-            }
+            _audioSource.Stop();
+            _audioSource.PlayOneShot(audioList[2]);
+            
+            if (_slowCoolDown <= 0)             // 0.5 sec slow
+                _slowCoolDown = 30f;
         }
         else
         {
@@ -129,20 +165,23 @@ public class ZombieController : MonoBehaviour
     {
         if (_distance < 6.0f)
         {
+            // Damage handling if distance from player is close
+            _audioSource.Stop();
+            _audioSource.PlayOneShot(audioList[1]);
             _player.GetComponent<PlayerController>().Attacked();
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !_hasTarget)
         {
-            _hasTarget = true;
+            if (Mathf.Abs(other.transform.position.y - transform.position.y) < 1.5f)
+            {
+                _hasTarget = true;
+                _audioSource.Stop();
+                _audioSource.PlayOneShot(audioList[0]);   
+            }
         }
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        Debug.Log("collision2");
     }
 }

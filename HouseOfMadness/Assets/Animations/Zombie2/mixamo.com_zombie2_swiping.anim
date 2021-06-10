@@ -75203,10 +75203,10 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1.3333334
+  - time: 1
     functionName: AttackPlayer
     data: 
-    objectReferenceParameter: {fileID: 2720983165508509589, guid: 94ce0e43c26c764408ae46247a1cc155, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
