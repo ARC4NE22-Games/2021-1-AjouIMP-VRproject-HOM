@@ -31,20 +31,25 @@ public class FadeController : MonoBehaviour
     
     public void HideSelectEnter(SelectEnterEventArgs args)
     {
-        StartCoroutine(FadeIn());
-        isHidden = true;
-        moveProvider.moveSpeed = 0f;
+        if (!isHidden)
+        {
+            StartCoroutine(FadeIn());
+        }
     }
 
 
     IEnumerator FadeIn()
     {
+        canvasGroup.alpha = 0f;
+        isHidden = true;
+        moveProvider.moveSpeed = 0f;   
+        
         while ( canvasGroup.alpha < 1.0f)
         {
             canvasGroup.alpha += 0.01f;
             yield return new WaitForSeconds(_fadeTime * 0.01f);
         }
-
+        
         StartCoroutine(FadeOut());
     }
 
