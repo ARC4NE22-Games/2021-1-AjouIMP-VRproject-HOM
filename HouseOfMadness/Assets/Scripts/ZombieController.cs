@@ -6,18 +6,21 @@ using UnityEngine.AI;
 
 public class ZombieController : MonoBehaviour
 {
-    public GameObject player;
     public int uid;
     
+    private GameObject _player;
     private NavMeshAgent _navMeshAgent;
     private Animator _animator;
     private Vector3 _basePos;
+    
     private float _distance, _coolDown, _speed;
     private int _health, _detectionDist;
     private bool _hasTarget;
     
     private void Start()
     {
+        _player = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody").gameObject;
+        Debug.Log(_player);
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _basePos = transform.position;
@@ -45,8 +48,8 @@ public class ZombieController : MonoBehaviour
     {
         if (_hasTarget)
         {
-            _distance = dist2(transform.position, player.transform.position);
-            _navMeshAgent.SetDestination(player.transform.position);
+            _distance = dist2(transform.position, _player.transform.position);
+            _navMeshAgent.SetDestination(_player.transform.position);
             
             if (_distance > (_detectionDist + 1) * (_detectionDist + 1))
                 _hasTarget = false;
@@ -126,7 +129,7 @@ public class ZombieController : MonoBehaviour
     {
         if (_distance < 6.0f)
         {
-            player.GetComponent<PlayerController>().Attacked();
+            _player.GetComponent<PlayerController>().Attacked();
         }
     }
 
