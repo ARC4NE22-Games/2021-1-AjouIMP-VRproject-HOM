@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -30,12 +31,11 @@ public class PlayerController : MonoBehaviour
         if (_health > 0)
         {
             _health--;
-            Debug.Log(_health);
         }
         else
         {
-            // game over
+            // Game Over
+            SceneManager.LoadScene("MenuScene");
         }
     }
-
 }

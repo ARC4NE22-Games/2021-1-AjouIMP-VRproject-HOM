@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public int KeyCount = 0;
     public int BulletCount = 0;
+    public GameObject LightObject;
 
 
     // Start is called before the first frame update
@@ -22,7 +23,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(KeyCount == 3)
+        {
+            GameObject spawnedBullet = Instantiate(LightObject, new Vector3(0,2.5f,0), Quaternion.identity);
+            KeyCount = 0;
+        }
     }
 
     public void GrabSelectEnter(SelectEnterEventArgs args)
