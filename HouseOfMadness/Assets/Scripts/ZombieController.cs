@@ -10,6 +10,7 @@ public class ZombieController : MonoBehaviour
     public int uid;
     
     private GameObject _player;
+    private FadeController _fade;
     private NavMeshAgent _navMeshAgent;
     private Animator _animator;
     private AudioSource _audioSource;
@@ -24,6 +25,8 @@ public class ZombieController : MonoBehaviour
     {
         _player = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody").gameObject;
         //_player = GameObject.Find("Capsule");
+        _fade = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("FadeInOut")
+            .GetComponent<FadeController>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
@@ -78,6 +81,11 @@ public class ZombieController : MonoBehaviour
         {
             _navMeshAgent.SetDestination(_basePos);
             _distance = dist2(transform.position, _basePos);
+        }
+
+        if (_fade.isHidden)
+        {
+            _hasTarget = false;
         }
     }
 
