@@ -4480,6 +4480,7 @@ MonoBehaviour:
   KeyClip: {fileID: 8300000, guid: 5ef4af2db3ea2284598485c85f535902, type: 3}
   AttackedClip: {fileID: 8300000, guid: 5669151fb37dceb4e863ec2693806678, type: 3}
   ExitClip: {fileID: 8300000, guid: f37ab8380845e88479ca50ad4f8bed71, type: 3}
+  WalkClip: {fileID: 8300000, guid: 1d4504408f9f6e7408fc2c3ba6700b02, type: 3}
   KeyCount: 0
   BulletCount: 0
   Health: 5

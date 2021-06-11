@@ -1,19 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public AudioClip KeyClip, AttackedClip, ExitClip;
+    public ActionBasedContinuousMoveProvider MoveProvider;
+    public AudioClip KeyClip, AttackedClip, ExitClip, WalkClip;
 
     public int KeyCount, BulletCount, Health;
     public GameObject LightObject;
     
     private const int MAX_BULLET_COUNT = 10;
     private AudioSource _audioSource;
+    private float coolDown;
     
 
 
@@ -21,6 +24,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
+        MoveProvider = GameObject.Find("XR Rig").GetComponent<ActionBasedContinuousMoveProvider>();
         Health = 5;
     }
 
@@ -31,6 +35,23 @@ public class GameManager : MonoBehaviour
         {
             LightObject.SetActive(true);
             //KeyCount = 0;
+        }
+        
+        if (MoveProvider.leftHandMoveAction.action.phase == InputActionPhase.Started
+            || MoveProvider.leftHandMoveAction.action.phase == InputActionPhase.Performed)
+        {
+            coolDown++;
+        }
+        else
+        {
+            coolDown = 0;
+        }
+
+        if (coolDown >= 3)
+        {
+            coolDown = 0;
+            _audioSource.Stop();
+            _audioSource.PlayOneShot(WalkClip);
         }
     }
 
@@ -65,7 +86,7 @@ public class GameManager : MonoBehaviour
     
     public void Attacked()
     {
-        if (Health > 0)
+        if (Health > 1)
         {
             _audioSource.Stop();
             _audioSource.PlayOneShot(AttackedClip);
