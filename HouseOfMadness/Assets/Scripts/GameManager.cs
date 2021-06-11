@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public AudioClip KeyClip, AttackedClip;
+    public AudioClip KeyClip, AttackedClip, ExitClip;
 
     public int KeyCount, BulletCount, Health;
     public GameObject LightObject;
@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
 
         else if (args.interactable.CompareTag("Exit"))
         {
+            _audioSource.PlayOneShot(ExitClip);
             SceneManager.LoadScene("MenuScene");
         }
     }

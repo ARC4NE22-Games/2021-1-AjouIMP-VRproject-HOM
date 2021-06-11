@@ -9,12 +9,13 @@ public class Gun : MonoBehaviour
     public float speed = 40;
     public GameObject bullet;
     public Transform bulletHole;
-    public TextMeshProUGUI tmPro;
+    public TextMeshProUGUI tmPro, hlPro;
     public AudioClip audioClip;
     
     private AudioSource audioSource;
     private GameManager _gameManager;
     private const int MAX_BULLET_COUNT = 10;
+    private const int MAX_HEALTH_COUNT = 5;
 
 
     void Start()
@@ -23,11 +24,13 @@ public class Gun : MonoBehaviour
         _gameManager = GameObject.Find("XR Rig").transform.Find("Camera Offset").Find("PlayerBody")
             .GetComponent<GameManager>();
         tmPro.text = _gameManager.BulletCount + " / " + MAX_BULLET_COUNT;
+        hlPro.text = _gameManager.Health + " / " + MAX_HEALTH_COUNT;
     }
 
     void Update()
     {
         tmPro.text = _gameManager.BulletCount + " / " + MAX_BULLET_COUNT;
+        hlPro.text = _gameManager.Health + " / " + MAX_HEALTH_COUNT;
     }
 
     public void Fire()
